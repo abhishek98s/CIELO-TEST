@@ -212,7 +212,8 @@ main {
     padding: 160px 0 120px 156px;
     color: #FFFFFF; }
     .sc-partners .partner .left-block .info-wrapper {
-      max-width: 493px; }
+      max-width: 493px;
+      margin-right: 70px; }
     .sc-partners .partner .left-block .partner-info {
       margin-bottom: 40px; }
       .sc-partners .partner .left-block .partner-info h3 {
@@ -378,6 +379,12 @@ main {
 
 .m-0 {
   margin: 0; }
+
+.ml-auto {
+  margin-left: auto; }
+
+.mr-auto {
+  margin-right: auto; }
 
 .p-0 {
   padding: 0; }
