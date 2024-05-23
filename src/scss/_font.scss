@@ -27,6 +27,12 @@
 // tiempos-headline
 @font-face {
     font-family: 'tiempos headline';
+    src: url('/dist/fonts/tiempos-headline/TiemposHeadline-Light.otf') format('otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'tiempos headline';
     src: url('/dist/fonts/tiempos-headline/TiemposHeadline-Semibold.otf') format('otf');
     font-weight: 600;
 }
@@ -35,4 +41,11 @@
     font-family: 'tiempos headline';
     src: url('/dist/fonts/tiempos-headline/TiemposHeadline-Bold.otf') format('otf');
     font-weight: 700;
+}
+
+// Helvetica
+@font-face {
+    font-family: 'helvetica';
+    src: url('/dist/fonts/helvetica/Helvetica-Bold.ttf') format('ttf');
+    font-weight: 800;
 }
