@@ -1,0 +1,258 @@
+nav {
+    max-width: 1356px;
+    top: 24px;
+    background-color: $neutral-grey-light;
+    padding: 10px 50px 10px;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+    max-width: 1356px;
+    width: 100%;
+
+    .logo {
+        max-width: 76px;
+        margin-right: 32px;
+    }
+
+    .nav-item-list {
+        gap: 60px;
+
+        .nav-item {
+            width: 96px;
+            height: 74px;
+
+            a {
+                color: $neutral-carbon-dark;
+
+                &:hover {
+                    font-weight: 700;
+                    color: $primary-purple-light;
+                }
+            }
+
+            &::before {
+                content: '';
+                height: 4px;
+                border-radius: 100px;
+                background-color: $primary-purple-light;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                transition: .4s;
+            }
+
+
+        }
+    }
+
+    .right {
+        margin-left: 80px;
+
+        .search {
+            max-width: 36px;
+            height: 36px;
+            transition: .4s;
+            background-color: $primary-10;
+
+            &:hover {
+                background-color: $neutral-grey-medium;
+            }
+
+            &:active {
+                path {
+                    stroke: $primary-purple-dark;
+                }
+            }
+        }
+
+        .cta-btn {
+            margin: 0 37px 0 31px;
+        }
+
+        .language {
+            color: $primary-purple-light;
+            transition: .4s;
+
+            span {
+                border-bottom: 1.5px none $primary-purple-medium;
+            }
+
+            .icon-globe,
+            .icon-dropdown {
+                max-width: 24px;
+                height: 24px;
+                transition: .4s;
+            }
+
+            &:hover {
+                span {
+                    color: $primary-purple-medium;
+                    border-bottom: 1.5px solid $primary-purple-medium;
+                }
+
+                .icon-globe,
+                .icon-dropdown {
+                    path {
+                        stroke: $primary-purple-medium;
+                    }
+                }
+            }
+
+            &:active {
+                .icon-dropdown {
+                    rotate: 180deg;
+                }
+
+                span {
+                    color: $primary-purple-medium;
+                }
+
+                .icon-globe,
+                .icon-dropdown {
+                    path {
+                        stroke: $primary-purple-dark;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+main {
+    background-color: $neutral-10;
+    height: 814px;
+    padding-top: 124px;
+
+    .container {
+        padding: 0 178px 0 144px;
+
+        .left-block {
+            max-width: 475px;
+
+            .designation {
+                color: $neutral-carbon-light;
+                margin-bottom: 18px;
+            }
+
+            h1 {
+                background-color: #f3ec78;
+                background-image: $pink-gradient;
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+                line-height: 86px;
+                font-size: 72px;
+                margin-bottom: 42px;
+            }
+
+            .cta-wrapper {
+                gap: 24px;
+
+                .cta-btn {
+                    max-width: 182px;
+                    height: 48px;
+                }
+
+                .secondary-btn {
+                    color: $primary-purple-light;
+                    max-width: 190px;
+                    width: 100%;
+
+                    span,
+                    span::before,
+                    .flex {
+                        transition: .4s;
+                    }
+
+                    &:hover {
+                        .flex {
+                            gap: 12px;
+                        }
+
+                        span {
+
+                            &::before {
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    &:active {
+                        .flex {
+                            gap: 8px;
+
+                            span {
+                                color: $primary-purple-dark;
+
+                                &::before {
+                                    background-color: $primary-purple-dark;
+                                }
+                            }
+
+                        }
+
+                    }
+
+                    .flex {
+                        gap: 8px;
+                    }
+
+
+                    span {
+                        position: relative;
+                        display: block;
+                        line-height: 30px;
+
+                        &::before {
+                            content: '';
+                            display: block;
+                            height: 2px;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-color: $primary-purple-light;
+                            opacity: 0;
+                        }
+                    }
+
+                    .icon-right {
+                        max-width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
+        .right-block {
+            &>figure {
+                position: relative;
+
+                img {
+                    position: relative;
+                    z-index: 10;
+                }
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 714px;
+                    height: 718px;
+                    margin-left: 34px;
+                    margin-top: 10px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 1;
+                    background: url('../../images/circle-gradient.png');
+                    transform: translate(-50%, -50%);
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+// graphik
+@font-face {
+    font-family: 'graphik';
+    src: url('/dist/fonts/graphik/GraphikRegular.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'graphik';
+    src: url('/dist/fonts/graphik/GraphikMedium.otf') format('otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'graphik';
+    src: url('/dist/fonts/graphik/GraphikSemibold.otf') format('otf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'graphik';
+    src: url('/dist/fonts/graphik/GraphikBold.otf') format('otf');
+    font-weight: 700;
+}
+
+// tiempos-headline
+@font-face {
+    font-family: 'tiempos headline';
+    src: url('/dist/fonts/tiempos-headline/TiemposHeadline-Semibold.otf') format('otf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'tiempos headline';
+    src: url('/dist/fonts/tiempos-headline/TiemposHeadline-Bold.otf') format('otf');
+    font-weight: 700;
+}

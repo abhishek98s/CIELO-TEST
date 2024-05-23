@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+button {
+    border: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'graphik';
+}
+
+figure {
+    margin: 0;
+    width: 100%;
+
+    img {
+
+        &.contain {
+            object-fit: contain;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1356px;
+    margin-inline: auto;
+}
+
+.font-tiempos-headline {
+    font-family: 'tiempos headline';
+}
+
+.cta-btn {
+    background-color: $primary-purple-light;
+    border-radius: 25px;
+    height: 48px;
+    max-width: 162px;
+    width: 100%;
+    color: $secondary-color-white;
+}
