@@ -6,7 +6,7 @@ footer {
     &::before {
         content: '';
         position: absolute;
-        top: 0;
+        bottom: -284px;
         right: -210px;
         display: block;
         width: 718px;
@@ -175,4 +175,46 @@ footer {
     }
 }
 
-@media screen and (max-width: 922px) {}
+@media screen and (max-width: 922px) {
+    footer .bottom-block {
+        flex-direction: column;
+
+        &.items-center {
+            align-items: start;
+
+            li {
+                width: 100%;
+                border: none;
+            }
+        }
+
+        .legal-pages {
+            padding: 0;
+        }
+
+        .social-meida-wrapper,
+        .legal-pages {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+    footer {
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .top-block .link-block-wrapper {
+            flex-wrap: wrap;
+            row-gap: 40px;
+
+            .link-box {
+                width: 50%;
+            }
+        }
+    }
+}
