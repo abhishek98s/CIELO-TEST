@@ -416,6 +416,10 @@ nav {
       nav .mobile-nav.active .right {
         margin: 0; } }
 
+@media screen and (max-width: 576px) {
+  nav {
+    padding-inline: 20px; } }
+
 main {
   background-color: #E9E9E9;
   height: 814px;
