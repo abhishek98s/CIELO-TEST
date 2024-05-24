@@ -1,51 +1,84 @@
 // graphik
 @font-face {
-    font-family: 'graphik';
-    src: url('/dist/fonts/graphik/GraphikRegular.otf') format('otf');
-    font-weight: 400;
+    font-family: 'Graphik';
+    src: url('../../dist/fonts/graphik/Graphik-Regular.woff2') format('woff2'),
+        url('../../dist/fonts/graphik/Graphik-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'graphik';
-    src: url('/dist/fonts/graphik/GraphikMedium.otf') format('otf');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'graphik';
-    src: url('/dist/fonts/graphik/GraphikSemibold.otf') format('otf');
+    font-family: 'Graphik';
+    src: url('../../dist/fonts/graphik/Graphik-Semibold.woff2') format('woff2'),
+        url('../../dist/fonts/graphik/Graphik-Semibold.woff') format('woff');
     font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'graphik';
-    src: url('/dist/fonts/graphik/GraphikBold.otf') format('otf');
-    font-weight: 700;
+    font-family: 'Graphik';
+    src: url('../../dist/fonts/graphik/Graphik-Medium.woff2') format('woff2'),
+        url('../../dist/fonts/graphik/Graphik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('../../dist/fonts/graphik/Graphik-Light.woff2') format('woff2'),
+        url('../../dist/fonts/graphik/Graphik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('../../dist/fonts/graphik/Graphik-Bold.woff2') format('woff2'),
+        url('../../dist/fonts/graphik/Graphik-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 // tiempos-headline
 @font-face {
-    font-family: 'tiempos headline';
-    src: url('/dist/fonts/tiempos-headline/TiemposHeadline-Light.otf') format('otf');
-    font-weight: 300;
+  font-family: "tiempos_headlinebold";
+  src: url("../../dist/fonts/tiempos-headline/tiemposheadline-bold-webfont.woff2") format("woff2"),
+    url("../../dist/fonts/tiempos-headline/tiemposheadline-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'tiempos headline';
-    src: url('/dist/fonts/tiempos-headline/TiemposHeadline-Semibold.otf') format('otf');
-    font-weight: 600;
+  font-family: "tiempos_headlinelight";
+  src: url("../../dist/fonts/tiempos-headline/tiemposheadline-light-webfont.woff2") format("woff2"),
+    url("../../dist/fonts/tiempos-headline/tiemposheadline-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'tiempos headline';
-    src: url('/dist/fonts/tiempos-headline/TiemposHeadline-Bold.otf') format('otf');
-    font-weight: 700;
+  font-family: "tiempos_headlinesemibold";
+  src: url("../../dist/fonts/tiempos-headline/tiemposheadline-semibold-webfont.woff2") format("woff2"),
+    url("../../dist/fonts/tiempos-headline/tiemposheadline-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 // Helvetica
+
 @font-face {
-    font-family: 'helvetica';
-    src: url('/dist/fonts/helvetica/Helvetica-Bold.ttf') format('ttf');
-    font-weight: 800;
+    font-family: 'Helvetica';
+    src: url('../../dist/fonts/helvetica/Helvetica-Bold.woff2') format('woff2'),
+        url('../../dist/fonts/helvetica/Helvetica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
