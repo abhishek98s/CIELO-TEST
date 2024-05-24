@@ -1,0 +1,135 @@
+footer {
+    background-color: $neutral-grey-light;
+    overflow: hidden;
+    z-index: 8;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -210px;
+        display: block;
+        width: 718px;
+        height: 718px;
+        background-color: $secondary-color-white;
+        opacity: 0.7;
+        z-index: 80;
+        border-radius: 1000px;
+    }
+
+    .container.inner {
+        padding: 0 114px;
+    }
+
+    .top-block {
+        margin-block: 40px;
+
+        .left {
+            max-width: 648px;
+
+            .link-box {
+                h6 {
+                    color: $primary-purple-light;
+                    margin-bottom: 8px;
+                    padding-block: 8px;
+                }
+
+                li {
+                    padding-block: 8px;
+                    margin-bottom: 12px;
+
+                    a {
+                        color: $black;
+
+                        &:hover {
+                            color: $primary-purple-light;
+                        }
+                    }
+                }
+
+                .resources li {
+                    margin-bottom: 32px;
+
+                    &.fw-bold a {
+                        color: $primary-purple-light;
+                    }
+                }
+            }
+        }
+
+        .right {
+            max-width: 358px;
+
+            h5 {
+                line-height: 34px;
+                background-image: $graident-purple2;
+            }
+
+            div.text-16 {
+                margin: 16px 0 24px;
+                color: $neutral-carbon-light;
+            }
+
+            input {
+                padding: 8px 16px;
+            }
+        }
+    }
+
+    .bottom-block {
+        padding-block: 12px;
+
+        .social-meida-wrapper figure {
+            max-width: 24px;
+        }
+
+        .legal-pages li {
+            padding-right: 16px;
+            border-right: 1px solid $neutral-carbon-light;
+
+            &:last-of-type {
+                border: none;
+            }
+
+            a {
+                color: $neutral-carbon-light;
+            }
+        }
+
+        .copy-right {
+            color: $neutral-carbon-light;
+        }
+    }
+
+    .person-illus {
+        max-width: 156px;
+        height: 160px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .topTop {
+        padding-block: 8px;
+        top: 37px;
+        right: 56px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    footer {
+        &::before {
+            right: -24%;
+        }
+
+        .top-block {
+            .left {
+                max-width: 600px;
+            }
+
+            .right {
+                max-width: 300px;
+            }
+        }
+    }
+}

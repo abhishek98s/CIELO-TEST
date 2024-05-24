@@ -1,0 +1,118 @@
+nav {
+    max-width: 1356px;
+    top: 24px;
+    background-color: $neutral-grey-light;
+    padding: 10px 50px 10px;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+    max-width: 1356px;
+    width: 100%;
+    z-index: 9999;
+
+    .logo {
+        max-width: 76px;
+        margin-right: 32px;
+    }
+
+    .nav-item-list {
+        gap: 60px;
+
+        .nav-item {
+            width: 96px;
+            height: 74px;
+
+            a {
+                color: $neutral-carbon-dark;
+
+                &:hover {
+                    font-weight: 700;
+                    color: $primary-purple-light;
+                }
+            }
+
+            &::before {
+                content: "";
+                height: 4px;
+                border-radius: 100px;
+                background-color: $primary-purple-light;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                transition: 0.4s;
+            }
+        }
+    }
+
+    .right {
+        margin-left: 80px;
+
+        .search {
+            max-width: 36px;
+            height: 36px;
+            transition: 0.4s;
+            background-color: $primary-10;
+
+            &:hover {
+                background-color: $neutral-grey-medium;
+            }
+
+            &:active {
+                path {
+                    stroke: $primary-purple-dark;
+                }
+            }
+        }
+
+        .cta-btn {
+            margin: 0 37px 0 31px;
+        }
+
+        .language {
+            color: $primary-purple-light;
+            transition: 0.4s;
+
+            span {
+                border-bottom: 1.5px none $primary-purple-medium;
+            }
+
+            .icon-globe,
+            .icon-dropdown {
+                max-width: 24px;
+                height: 24px;
+                transition: 0.4s;
+            }
+
+            &:hover {
+                span {
+                    color: $primary-purple-medium;
+                    border-bottom: 1.5px solid $primary-purple-medium;
+                }
+
+                .icon-globe,
+                .icon-dropdown {
+                    path {
+                        stroke: $primary-purple-medium;
+                    }
+                }
+            }
+
+            &:active {
+                .icon-dropdown {
+                    rotate: 180deg;
+                }
+
+                span {
+                    color: $primary-purple-medium;
+                }
+
+                .icon-globe,
+                .icon-dropdown {
+                    path {
+                        stroke: $primary-purple-dark;
+                    }
+                }
+            }
+        }
+    }
+}

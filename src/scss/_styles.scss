@@ -1,58 +1,107 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: 0.4s;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 button {
-  border: 0;
+    border: 0;
 }
 
 body {
-  font-size: 18px;
-  font-family: "graphik";
+    font-size: 18px;
+    font-family: "graphik";
 }
 
 figure {
-  margin: 0;
-  width: 100%;
+    margin: 0;
+    width: 100%;
 
-  img {
-    object-fit: cover;
+    img {
+        object-fit: cover;
 
-    &.contain {
-      object-fit: contain;
+        &.contain {
+            object-fit: contain;
+        }
     }
-  }
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+input,
+select {
+    outline: 1px solid $neutral-grey-medium;
+    border: none;
+    padding: 16px;
+    padding-right: 40px;
+    line-height: 30px;
+    max-width: 375px;
+    width: 100%;
+    color: $neutral-grey-dark;
+    font-size: 18px;
+
+    &::placeholder {
+        color: $neutral-grey-dark;
+        font-size: 18px;
+    }
+
+    &:hover {
+        background-color: $neutral-20;
+        outline: 1px solid $primary-purple-light;
+    }
+
+    &:focus {
+        outline: 1px solid $primary-purple-light;
+        border: none;
+    }
+}
+
+select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    padding: 10px;
+    background-image: url('../../images/drop-down.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: right 10px center;
 }
 
 .container {
-  max-width: 1356px;
-  margin-inline: auto;
+    max-width: 1356px;
+    margin-inline: auto;
 
-  &.inner {
-    padding: 0 178px 0 144px;
-  }
+    &.inner {
+        padding: 0 178px 0 144px;
+    }
 }
 
 .font-tiempos-headline {
-  font-family: "tiempos headline";
+    font-family: "tiempos headline";
 }
 
 .font-helvetica {
-  font-family: "helvetica";
+    font-family: "helvetica";
 }
 
 .cta-btn {
-  background-color: $primary-purple-light;
-  border-radius: 25px;
-  height: 48px;
-  max-width: 162px;
-  width: 100%;
-  color: $secondary-color-white;
+    background-color: $primary-purple-light;
+    border-radius: 25px;
+    max-width: 162px;
+    min-width: 162px;
+    height: 48px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondary-color-white;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container.inner {
+        padding: 0 100px;
+    }
 }

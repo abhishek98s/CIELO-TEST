@@ -57,7 +57,6 @@
                                 d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"
                                 stroke="#804FEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-
                     </figure>
 
                     <span class="text-16">EN</span>
@@ -78,7 +77,7 @@
             <div class="w-100 flex justify-between items-center">
                 <div class="left-block w-100">
                     <div class="designation fw-semi-bold">Talent Acquisition Partner</div>
-                    <h1 class="font-tiempos-headline fw-semi-bold">Dare to be <br>
+                    <h1 class="font-tiempos-headline fw-semi-bold text-gradient">Dare to be <br>
                         legendary</h1>
 
                     <div class="cta-wrapper flex items-center">
@@ -185,15 +184,135 @@
                 <div class="right w-100">
                     <form action="">
                         <div class="tracker-list flex">
-                            <div class="tracker tracker-1 rounded-full w-100"></div>
+                            <div class="tracker tracker-1 rounded-full w-100 active"></div>
                             <div class="tracker tracker-2 rounded-full w-100"></div>
                             <div class="tracker tracker-3 rounded-full w-100"></div>
                         </div>
+
+                        <div class="form-item name-wrapper">
+                            <label for="name" class="text-16">*Name</label>
+                            <div class="flex gap-4">
+                                <input id="name" type="text" placeholder="First Name" class="rounded-8">
+                                <input type="text" placeholder="Last Name" class="rounded-8">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="email" class="text-16">*Email</label>
+                            <div class="flex gap-4">
+                                <input id="email" type="text" placeholder="email@example.com" class="rounded-8">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="email" class="text-16">*Country</label>
+
+                            <select class="rounded-8">
+                                <option>Select</option>
+                            </select>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="email" class="text-16">*Phone</label>
+                            <div class="flex gap-4">
+                                <input id="email" type="text" placeholder="(555) 555-5555" class="rounded-8">
+                            </div>
+                        </div>
+
+                        <a href="#" type="submit" class="cta-btn">
+                            Next
+                        </a>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="relative">
+        <div class="container inner">
+            <div class="top-block flex justify-between relative z-90">
+                <div class="left w-100">
+                    <div class="link-block-wrapper flex justify-between">
+                        <div class="link-box">
+                            <h6 class="fw-semi-bold text-18">Solutions</h6>
+                            <ul class="list-style-none p-0">
+                                <li class="text-14"><a href="#">Talent Acquisition</a></li>
+                                <li class="text-14"><a href="#">Consulting</a></li>
+                                <li class="text-14"><a href="#">Search</a></li>
+                                <li class="text-14"><a href="#">Digital Accelerators</a></li>
+                            </ul>
+                        </div>
+                        <div class="link-box">
+                            <h6 class="fw-semi-bold text-18">Industries</h6>
+                            <ul class="list-style-none p-0">
+                                <li class="text-14"><a href="#">Business Services</a></li>
+                                <li class="text-14"><a href="#">Healthcare</a></li>
+                                <li class="text-14"><a href="#">Life Sciences</a></li>
+                                <li class="text-14"><a href="#">Manufacturing</a></li>
+                                <li class="text-14"><a href="#">Retail + Consumer</a></li>
+                                <li class="text-14"><a href="#">Technology + Media</a></li>
+                            </ul>
+                        </div>
+                        <div class="link-box">
+                            <h6 class="fw-semi-bold text-18">Regions</h6>
+                            <ul class="list-style-none p-0">
+                                <li class="text-14"><a href="#">Asia Pacific</a></li>
+                                <li class="text-14"><a href="#">Latin America</a></li>
+                                <li class="text-14"><a href="#">North America</a></li>
+                                <li class="text-14"><a href="#">Europe</a></li>
+                                <li class="text-14"><a href="#">Middle East + Africa</a></li>
+                            </ul>
+                        </div>
+                        <div class="link-box">
+                            <h6 class=" fw-semi-bold text-18">Resources</h6>
+                            <ul class="resources list-style-none p-0">
+                                <li class="text-14"><a href="#">Events</a></li>
+                                <li class="text-18 fw-bold"><a href="#">About Cielo</a></li>
+                                <li class="text-18 fw-bold"><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="right w-100">
+                    <h5 class="text-24 text-gradient font-tiempos-headline fw-semi-bold">Cielo in your inbox</h5>
+                    <div class="text-16">Optional copy here</div>
+                    <input class="rounded-8 w-100" type="text" placeholder="Email">
+                </div>
+            </div>
+
+            <div class="bottom-block flex justify-between items-center relative z-90">
+                <div class="social-meida-wrapper flex items-center gap-4">
+                    <figure>
+                        <img src="images/icons/facebook.svg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="images/icons/linkedin.svg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="images/icons/youtube.svg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="images/icons/x.svg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="images/icons/we-chat.svg" alt="">
+                    </figure>
+                </div>
+                <ul class="legal-pages list-style-none p-0 flex gap-4">
+                    <li class="text-14"><a href="#">Privacy Notice</a></li>
+                    <li class="text-14"><a href="#">Candidate Privacy Notice</a></li>
+                    <li class="text-14"><a href="#">Modern Slavery Statement</a></li>
+                    <li class="text-14"><a href="#">PoSH Policy- India</a></li>
+                </ul>
+                <div class="copy-right text-14">© Cielo 2023</div>
+            </div>
+
+        </div>
+        <figure class="person-illus absolute z-100">
+            <img src="images/footer.png">
+        </figure>
+        <a href="#" class="topTop text-14 absolute z-100">Back to top</a>
+    </footer>
 </body>
 
 </html>
