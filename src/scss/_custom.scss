@@ -229,6 +229,10 @@
     align-items: center;
   }
 
+  &.items-end {
+    align-items: end;
+  }
+
   &.gap-1 {
     gap: 4px;
   }

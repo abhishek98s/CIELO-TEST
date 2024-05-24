@@ -2,12 +2,14 @@ main {
   background-color: $neutral-10;
   height: 814px;
   padding-top: 124px;
+  overflow: hidden;
 
   .container {
     padding: 0 178px 0 144px;
 
     .left-block {
       max-width: 475px;
+      align-self: center;
 
       .designation {
         color: $neutral-carbon-light;
@@ -98,12 +100,7 @@ main {
 
     .right-block {
       &>figure {
-        position: relative;
-
-        img {
-          position: relative;
-          z-index: 10;
-        }
+        max-width: 100%;
 
         &::before {
           content: "";
@@ -116,7 +113,8 @@ main {
           top: 50%;
           left: 50%;
           z-index: 1;
-          background: url("../../images/circle-gradient.png");
+          background-size: 100%;
+          background-image: url('../../images/circle-gradient.png');
           transform: translate(-50%, -50%);
         }
       }
@@ -128,7 +126,6 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 20;
 
     background: linear-gradient(180deg,
         rgba(255, 255, 255, 0) 66.86%,
@@ -334,5 +331,44 @@ main {
 @media screen and (max-width: 1200px) {
   .sc-partners .partner .left-block .info-wrapper {
     max-width: 430px;
+  }
+
+  .sc-contact .right {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    height: 700px;
+
+    .container .right-block>figure::before {
+      margin: 0;
+      width: 600px;
+      height: 600px;
+      margin-top: 30px;
+    }
+  }
+
+  .sc-partners .partner .left-block {
+    .info-wrapper {
+      max-width: 370px;
+
+      .partner-info {
+        h3 {
+          font-size: 48px;
+        }
+
+        .description {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 922px) {
+  main .container .left-block h1 {
+    font-size: 62px;
   }
 }
