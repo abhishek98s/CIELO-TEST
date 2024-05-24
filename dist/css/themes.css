@@ -282,17 +282,37 @@ select {
   cursor: pointer; }
 
 nav {
-  max-width: 1356px;
   top: 24px;
   background-color: #F4F4F4;
   padding: 10px 50px 10px;
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
   max-width: 1356px;
   width: 100%;
-  z-index: 9999; }
+  z-index: 9999;
+  overflow: visible;
+  border-radius: 8px; }
   nav .logo {
     max-width: 76px;
     margin-right: 32px; }
+  nav .menu,
+  nav .close {
+    max-width: 40px;
+    height: 40px;
+    cursor: pointer; }
+  nav .menu {
+    display: none; }
+  nav .mobile-nav {
+    animation: top-down 0.4s ease-in-out; }
+
+@keyframes top-down {
+  0% {
+    transform: translate(-50%, -120%);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translate(-50%, 0%);
+    opacity: 1; } }
   nav .nav-item-list {
     gap: 60px; }
     nav .nav-item-list .nav-item {
@@ -350,6 +370,45 @@ nav {
       nav .right .language:active .icon-globe path,
       nav .right .language:active .icon-dropdown path {
         stroke: #45206E; }
+
+@media screen and (max-width: 1366px) {
+  nav {
+    max-width: calc(100vw - 20px); }
+    nav .menu {
+      display: block; }
+    nav .mobile-nav {
+      display: none; }
+    nav .mobile-nav.active {
+      display: block;
+      background: #FFFFFF;
+      position: absolute;
+      top: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 20px 40px;
+      padding-top: 40px;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+      flex-direction: column;
+      max-width: 420px;
+      width: 100%; }
+      nav .mobile-nav.active ul {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        gap: 0; }
+        nav .mobile-nav.active ul .nav-item {
+          width: 100%;
+          border-bottom: 1px solid #F4F4F4;
+          height: 80px; }
+          nav .mobile-nav.active ul .nav-item a {
+            width: 100%;
+            height: 100%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center; }
+      nav .mobile-nav.active .right {
+        margin: 0; } }
 
 main {
   background-color: #E9E9E9;
@@ -625,8 +684,13 @@ main {
           align-items: center; }
         main .container > div .left-block .cta-wrapper {
           justify-content: center; }
-      main .container > div .right-block figure {
+      main .container > div .right-block {
         margin: auto; }
+        main .container > div .right-block figure {
+          margin: auto; }
+          main .container > div .right-block figure::before {
+            width: 800px;
+            height: 800px; }
   .sc-partners .partner {
     height: unset; }
     .sc-partners .partner .left-block {

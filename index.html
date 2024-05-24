@@ -9,67 +9,79 @@
 </head>
 
 <body>
-    <nav class="fixed centerX flex items-center rounded-8 mx-auto">
+    <nav class="fixed centerX flex items-center justify-between w-100 mx-auto">
         <figure class="logo">
             <img src="images/icons/logo.svg" alt="logo">
         </figure>
 
-        <ul class="nav-item-list flex list-style-none p-0 m-0">
-            <li class="nav-item relative inline-center w-100"><a href="#" class=w-max-content">Solutions</a></li>
-            <li class="nav-item relative inline-center w-100"><a href="#" class=w-max-content">Industries</a></li>
-            <li class="nav-item relative inline-center w-100"><a href="#" class=w-max-content">Regions</a></li>
-            <li class="nav-item relative inline-center w-100"><a href="#" class=w-max-content">Resources</a></li>
-            <li class="nav-item relative inline-center w-100"><a href="#" class=w-max-content">About Us</a></li>
-        </ul>
+        <div class="mobile-nav flex">
+            <figure class="close ml-auto">
+                <img src="images/icons/close.svg" alt="">
+            </figure>
+            <ul class="nav-item-list flex list-style-none p-0 m-0">
+                <li class="nav-item relative inline-center w-100"><a href="#" class=w-max-content">Solutions</a></li>
+                <li class="nav-item relative inline-center w-100"><a href="#" class=w-max-content">Industries</a></li>
+                <li class="nav-item relative inline-center w-100"><a href="#" class=w-max-content">Regions</a></li>
+                <li class="nav-item relative inline-center w-100"><a href="#" class=w-max-content">Resources</a></li>
+                <li class="nav-item relative inline-center w-100"><a href="#" class=w-max-content">About Us</a></li>
+            </ul>
 
-        <div class="right flex items-center flex-grow-1">
-            <a href="#">
-                <figure class="search rounded-full">
-                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_14_118)">
-                            <path
-                                d="M17 25C21.4183 25 25 21.4183 25 17C25 12.5817 21.4183 9 17 9C12.5817 9 9 12.5817 9 17C9 21.4183 12.5817 25 17 25Z"
-                                stroke="#804FEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M26.9984 26.9984L22.6484 22.6484" stroke="#804FEE" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_14_118">
-                                <rect width="36" height="36" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </figure>
-            </a>
-
-            <a href="#" class="cta-btn inline-center">Contact Us</a>
-
-            <a href="#">
-                <div class="language flex items-center gap-1">
-                    <figure class="icon-globe">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                stroke="#804FEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M2 12H22" stroke="#804FEE" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"
-                                stroke="#804FEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <div class="right flex items-center flex-grow-1">
+                <a href="#">
+                    <figure class="search rounded-full">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_14_118)">
+                                <path
+                                    d="M17 25C21.4183 25 25 21.4183 25 17C25 12.5817 21.4183 9 17 9C12.5817 9 9 12.5817 9 17C9 21.4183 12.5817 25 17 25Z"
+                                    stroke="#804FEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M26.9984 26.9984L22.6484 22.6484" stroke="#804FEE" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_14_118">
+                                    <rect width="36" height="36" fill="white" />
+                                </clipPath>
+                            </defs>
                         </svg>
                     </figure>
+                </a>
 
-                    <span class="text-16">EN</span>
+                <a href="#" class="cta-btn inline-center">Contact Us</a>
 
-                    <figure class="icon-dropdown">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9L12 15L18 9" stroke="#804FEE" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </figure>
-                </div>
-            </a>
+                <a href="#">
+                    <div class="language flex items-center gap-1">
+                        <figure class="icon-globe">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                    stroke="#804FEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2 12H22" stroke="#804FEE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"
+                                    stroke="#804FEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </figure>
+
+                        <span class="text-16">EN</span>
+
+                        <figure class="icon-dropdown">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="#804FEE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </figure>
+                    </div>
+                </a>
+            </div>
         </div>
+
+        <figure class="menu">
+            <img src="images/icons/menu.svg" alt="">
+        </figure>
+
     </nav>
 
     <main class="relative">
@@ -228,91 +240,94 @@
         </div>
     </section>
 
-    <footer class="relative">
-        <div class="container inner">
-            <div class="top-block flex justify-between relative z-90">
-                <div class="left w-100">
-                    <div class="link-block-wrapper flex justify-between">
-                        <div class="link-box">
-                            <h6 class="fw-semi-bold text-18">Solutions</h6>
-                            <ul class="list-style-none p-0">
-                                <li class="text-14 w-100"><a href="#">Talent Acquisition</a></li>
-                                <li class="text-14 w-100"><a href="#">Consulting</a></li>
-                                <li class="text-14 w-100"><a href="#">Search</a></li>
-                                <li class="text-14 w-100"><a href="#">Digital Accelerators</a></li>
-                            </ul>
-                        </div>
-                        <div class="link-box">
-                            <h6 class="fw-semi-bold text-18">Industries</h6>
-                            <ul class="list-style-none p-0">
-                                <li class="text-14 w-100"><a href="#">Business Services</a></li>
-                                <li class="text-14 w-100"><a href="#">Healthcare</a></li>
-                                <li class="text-14 w-100"><a href="#">Life Sciences</a></li>
-                                <li class="text-14 w-100"><a href="#">Manufacturing</a></li>
-                                <li class="text-14 w-100"><a href="#">Retail + Consumer</a></li>
-                                <li class="text-14 w-100"><a href="#">Technology + Media</a></li>
-                            </ul>
-                        </div>
-                        <div class="link-box">
-                            <h6 class="fw-semi-bold text-18">Regions</h6>
-                            <ul class="list-style-none p-0">
-                                <li class="text-14 w-100"><a href="#">Asia Pacific</a></li>
-                                <li class="text-14 w-100"><a href="#">Latin America</a></li>
-                                <li class="text-14 w-100"><a href="#">North America</a></li>
-                                <li class="text-14 w-100"><a href="#">Europe</a></li>
-                                <li class="text-14 w-100"><a href="#">Middle East + Africa</a></li>
-                            </ul>
-                        </div>
-                        <div class="link-box">
-                            <h6 class=" fw-semi-bold text-18">Resources</h6>
-                            <ul class="resources list-style-none p-0">
-                                <li class="text-14 w-100"><a href="#">Events</a></li>
-                                <li class="text-18 fw-bold w-100"><a href="#">About Cielo</a></li>
-                                <li class="text-18 fw-bold w-100"><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
+</body>
+<footer class="relative">
+    <div class="container inner">
+        <div class="top-block flex justify-between relative z-90">
+            <div class="left w-100">
+                <div class="link-block-wrapper flex justify-between">
+                    <div class="link-box">
+                        <h6 class="fw-semi-bold text-18">Solutions</h6>
+                        <ul class="list-style-none p-0">
+                            <li class="text-14 w-100"><a href="#">Talent Acquisition</a></li>
+                            <li class="text-14 w-100"><a href="#">Consulting</a></li>
+                            <li class="text-14 w-100"><a href="#">Search</a></li>
+                            <li class="text-14 w-100"><a href="#">Digital Accelerators</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-box">
+                        <h6 class="fw-semi-bold text-18">Industries</h6>
+                        <ul class="list-style-none p-0">
+                            <li class="text-14 w-100"><a href="#">Business Services</a></li>
+                            <li class="text-14 w-100"><a href="#">Healthcare</a></li>
+                            <li class="text-14 w-100"><a href="#">Life Sciences</a></li>
+                            <li class="text-14 w-100"><a href="#">Manufacturing</a></li>
+                            <li class="text-14 w-100"><a href="#">Retail + Consumer</a></li>
+                            <li class="text-14 w-100"><a href="#">Technology + Media</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-box">
+                        <h6 class="fw-semi-bold text-18">Regions</h6>
+                        <ul class="list-style-none p-0">
+                            <li class="text-14 w-100"><a href="#">Asia Pacific</a></li>
+                            <li class="text-14 w-100"><a href="#">Latin America</a></li>
+                            <li class="text-14 w-100"><a href="#">North America</a></li>
+                            <li class="text-14 w-100"><a href="#">Europe</a></li>
+                            <li class="text-14 w-100"><a href="#">Middle East + Africa</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-box">
+                        <h6 class=" fw-semi-bold text-18">Resources</h6>
+                        <ul class="resources list-style-none p-0">
+                            <li class="text-14 w-100"><a href="#">Events</a></li>
+                            <li class="text-18 fw-bold w-100"><a href="#">About Cielo</a></li>
+                            <li class="text-18 fw-bold w-100"><a href="#">Contact Us</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="right w-100">
-                    <h5 class="text-24 text-gradient font-tiempos-headline fw-semi-bold">Cielo in your inbox</h5>
-                    <div class="text-16">Optional copy here</div>
-                    <input class="rounded-8 w-100" type="text" placeholder="Email">
-                </div>
             </div>
-
-            <div class="bottom-block flex justify-between items-center relative z-90">
-                <div class="social-meida-wrapper flex items-center gap-4">
-                    <figure>
-                        <img src="images/icons/facebook.svg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="images/icons/linkedin.svg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="images/icons/youtube.svg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="images/icons/x.svg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="images/icons/we-chat.svg" alt="">
-                    </figure>
-                </div>
-                <ul class="legal-pages list-style-none p-0 flex gap-4">
-                    <li class="text-14"><a href="#">Privacy Notice</a></li>
-                    <li class="text-14"><a href="#">Candidate Privacy Notice</a></li>
-                    <li class="text-14"><a href="#">Modern Slavery Statement</a></li>
-                    <li class="text-14"><a href="#">PoSH Policy- India</a></li>
-                </ul>
-                <div class="copy-right text-14">© Cielo 2023</div>
+            <div class="right w-100">
+                <h5 class="text-24 text-gradient font-tiempos-headline fw-semi-bold">Cielo in your inbox</h5>
+                <div class="text-16">Optional copy here</div>
+                <input class="rounded-8 w-100" type="text" placeholder="Email">
             </div>
-
         </div>
-        <figure class="person-illus absolute z-100">
-            <img src="images/footer.png">
-        </figure>
-        <a href="#" class="topTop text-14 absolute z-100">Back to top</a>
-    </footer>
-</body>
+
+        <div class="bottom-block flex justify-between items-center relative z-90">
+            <div class="social-meida-wrapper flex items-center gap-4">
+                <figure>
+                    <img src="images/icons/facebook.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="images/icons/linkedin.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="images/icons/youtube.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="images/icons/x.svg" alt="">
+                </figure>
+                <figure>
+                    <img src="images/icons/we-chat.svg" alt="">
+                </figure>
+            </div>
+            <ul class="legal-pages list-style-none p-0 flex gap-4">
+                <li class="text-14"><a href="#">Privacy Notice</a></li>
+                <li class="text-14"><a href="#">Candidate Privacy Notice</a></li>
+                <li class="text-14"><a href="#">Modern Slavery Statement</a></li>
+                <li class="text-14"><a href="#">PoSH Policy- India</a></li>
+            </ul>
+            <div class="copy-right text-14">© Cielo 2023</div>
+        </div>
+
+    </div>
+    <figure class="person-illus absolute z-100">
+        <img src="images/footer.png">
+    </figure>
+    <a href="#" class="topTop text-14 absolute z-100">Back to top</a>
+
+
+    <script src="dist/js/custom.js"></script>
+</footer>
 
 </html>

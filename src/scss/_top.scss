@@ -462,8 +462,15 @@ main {
       }
 
       .right-block {
+        margin: auto;
+
         figure {
           margin: auto;
+
+          &::before {
+            width: 800px;
+            height: 800px;
+          }
         }
       }
     }
