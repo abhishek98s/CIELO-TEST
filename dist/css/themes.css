@@ -86,7 +86,10 @@ select {
 
 @media screen and (max-width: 1024px) {
   .container.inner {
-    padding: 0 60px !important; } }
+    padding: 0 60px !important; }
+  input,
+  select {
+    max-width: 100%; } }
 
 @media screen and (max-width: 1024px) {
   .container.inner {
@@ -393,6 +396,8 @@ nav {
       flex-direction: column;
       max-width: 420px;
       width: 100%; }
+      nav .mobile-nav.active .close {
+        display: block; }
       nav .mobile-nav.active ul {
         flex-direction: column;
         align-items: center;

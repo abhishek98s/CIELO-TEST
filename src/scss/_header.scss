@@ -177,7 +177,9 @@ nav {
             max-width: 420px;
             width: 100%;
 
-
+            .close {
+                display: block;
+            }
 
             ul {
                 flex-direction: column;

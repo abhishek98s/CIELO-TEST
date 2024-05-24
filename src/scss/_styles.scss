@@ -110,6 +110,11 @@ select {
     .container.inner {
         padding: 0 60px !important;
     }
+
+    input,
+    select {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
