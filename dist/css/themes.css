@@ -298,6 +298,7 @@ nav {
   nav .close {
     max-width: 40px;
     height: 40px;
+    display: none;
     cursor: pointer; }
   nav .menu {
     display: none; }
